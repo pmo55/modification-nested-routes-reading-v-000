@@ -4156,3 +4156,6 @@ Processing by PostsController#edit as HTML
   Rendering posts/edit.html.erb within layouts/application
   Rendered posts/_form.html.erb (3.2ms)
   Rendered posts/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 58ms (Views: 36.3ms | ActiveRecord: 1.2ms)
+
+
