@@ -3938,3 +3938,13 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/authors/4/posts/new" for 149.142.201.3 at 2019-10-14 17:14:44 +0000
+Cannot render console from 149.142.201.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Parameters: {"author_id"=>"4"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.7ms)
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 27ms (Views: 16.8ms | ActiveRecord: 1.1ms)
+
+
