@@ -4103,3 +4103,37 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/authors/4/posts/18/edit" for 149.142.201.3 at 2019-10-14 17:18:48 +0000
+Cannot render console from 149.142.201.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#edit as HTML
+  Parameters: {"author_id"=>"4", "id"=>"18"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.6ms)
+  Rendered posts/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/18" for 149.142.201.3 at 2019-10-14 17:18:49 +0000
+Cannot render console from 149.142.201.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x7WNC1FpBwoiCdLsbFxJdCZctXf5KLrK6phx2YPBuKOCjdGD3HuHMAfrGhj6yd1FCmLI34aveFuzPg02MkmsjA==", "post"=>{"author_id"=>"4", "title"=>"Parsadfsdfs", "description"=>"This is a fdtestff"}, "commit"=>"Update Post", "id"=>"18"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", "Parsadfsdfs"], ["updated_at", "2019-10-14 17:18:49.948025"], ["id", 18]]
+  [1m[35m (70.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://165.227.31.156:37129/posts/18
+Completed 302 Found in 75ms (ActiveRecord: 71.3ms)
+
+
+Started GET "/posts/18" for 149.142.201.3 at 2019-10-14 17:18:50 +0000
+Cannot render console from 149.142.201.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.3ms)
+
+
