@@ -4159,3 +4159,11 @@ Processing by PostsController#edit as HTML
 Completed 200 OK in 58ms (Views: 36.3ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/authors/400/posts/18/edit" for 149.142.201.3 at 2019-10-14 17:22:46 +0000
+Cannot render console from 149.142.201.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/pmo55/modification-nested-routes-reading-v-000/app/controllers/posts_controller.rb:42: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...thor_posts_path(author), alert" 
+...                              ^):
+  
+app/controllers/posts_controller.rb:42: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
