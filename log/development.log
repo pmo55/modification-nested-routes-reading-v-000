@@ -3907,3 +3907,13 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/posts/17" for 149.142.201.3 at 2019-10-14 17:12:59 +0000
+Cannot render console from 149.142.201.3! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.1ms)
+
+
